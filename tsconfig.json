@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        // Environment setup
+        "lib": [
+            "ES2022"
+        ],
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "allowJs": true,
+
+        // Module resolution
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+
+        // Node.js specific
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+
+        // Best practices
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+
+        // Stricter flags
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noPropertyAccessFromIndexSignature": false
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
