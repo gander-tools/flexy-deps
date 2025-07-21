@@ -47,6 +47,7 @@
         "@commander-js/extra-typings": "^14.0.0",
         "@types/node": "^24.0.15",
         "git-cliff": "^2.9.1",
+        "lefthook": "^1.12.2",
         "release-it": "^19.0.4",
         "tsdown": "^0.12.9"
     },
