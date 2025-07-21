@@ -1,71 +1,71 @@
 {
-  "name": "flexy-deps",
-  "description": "A flexible dependency management tool inspired by Symfony Flex, allowing you to easily add dependencies based on predefined recipes.",
-  "version": "0.0.0",
-  "author": "Adam Gąsowski",
-  "license": "MIT",
-  "type": "module",
-  "main": "./dist/cli.cjs",
-  "bin": {
-    "flexy-deps": "dist/cli.cjs"
-  },
-  "exports": {
-    ".": "./dist/cli.cjs",
-    "./package.json": "./package.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gander-tools/flexy-deps.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gander-tools/flexy-deps/issues"
-  },
-  "homepage": "https://github.com/gander-tools/flexy-deps",
-  "files": [
-    "dist/",
-    "README.md",
-    "LICENSE"
-  ],
-  "keywords": [
-    "npm",
-    "dependencies",
-    "flex",
-    "automation",
-    "package-manager",
-    "dependency-management",
-    "npm-scripts"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@inquirer/prompts": "^7.7.0",
-    "commander": "^14.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.1.2",
-    "@commander-js/extra-typings": "^14.0.0",
-    "@types/node": "^24.0.15",
-    "git-cliff": "^2.9.1",
-    "release-it": "^19.0.4",
-    "tsdown": "^0.12.9"
-  },
-  "peerDependencies": {
-    "typescript": "^5.8.3"
-  },
-  "engines": {
-    "node": ">=20.19"
-  },
-  "scripts": {
-    "check": "biome check",
-    "check:fix": "biome check --write",
-    "format": "biome format",
-    "format:fix": "biome format --write",
-    "lint": "biome lint",
-    "lint:fix": "biome lint --write",
-    "build": "tsdown",
-    "build:watch": "tsdown --watch",
-    "build:exports": "tsdown --exports",
-    "release": "release-it"
-  }
+    "name": "flexy-deps",
+    "description": "A flexible dependency management tool inspired by Symfony Flex, allowing you to easily add dependencies based on predefined recipes.",
+    "version": "0.0.0",
+    "author": "Adam Gąsowski",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/cli.cjs",
+    "bin": {
+        "flexy-deps": "dist/cli.cjs"
+    },
+    "exports": {
+        ".": "./dist/cli.cjs",
+        "./package.json": "./package.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gander-tools/flexy-deps.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gander-tools/flexy-deps/issues"
+    },
+    "homepage": "https://github.com/gander-tools/flexy-deps",
+    "files": [
+        "dist/",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "npm",
+        "dependencies",
+        "flex",
+        "automation",
+        "package-manager",
+        "dependency-management",
+        "npm-scripts"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@inquirer/prompts": "^7.7.0",
+        "commander": "^14.0.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.1.2",
+        "@commander-js/extra-typings": "^14.0.0",
+        "@types/node": "^24.0.15",
+        "git-cliff": "^2.9.1",
+        "release-it": "^19.0.4",
+        "tsdown": "^0.12.9"
+    },
+    "peerDependencies": {
+        "typescript": "^5.8.3"
+    },
+    "engines": {
+        "node": ">=20.19"
+    },
+    "scripts": {
+        "check": "biome check",
+        "check:fix": "biome check --write",
+        "format": "biome format",
+        "format:fix": "biome format --write",
+        "lint": "biome lint",
+        "lint:fix": "biome lint --write",
+        "build": "tsdown",
+        "build:watch": "tsdown --watch",
+        "build:exports": "tsdown --exports",
+        "release": "release-it"
+    }
 }
