@@ -24,8 +24,15 @@ jobs:
             - uses: oven-sh/setup-bun@v2
 
             # Ensure npm 11.5.1 or later for Trusted Publishers
-            - name: Update npm
-              run: npm install -g npm@latest
+            - name: Check npm version
+              run: |
+                  NPM_VERSION=$(npm --version)
+                  REQUIRED_VERSION="11.5.1"
+                  if [ "$(printf '%s\n' "$REQUIRED_VERSION" "$NPM_VERSION" | sort -V | head -n1)" != "$REQUIRED_VERSION" ]; then
+                      echo "Error: npm version $NPM_VERSION is older than required $REQUIRED_VERSION for Trusted Publishers"
+                      exit 1
+                  fi
+                  echo "npm version $NPM_VERSION meets the requirement (>= $REQUIRED_VERSION)"
 
             - run: bun install
 
