@@ -39,7 +39,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@inquirer/prompts": "^7.7.0",
+        "@inquirer/prompts": "^8.0.0",
         "commander": "^14.0.0"
     },
     "devDependencies": {
