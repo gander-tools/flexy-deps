@@ -40,11 +40,11 @@
     },
     "dependencies": {
         "@inquirer/prompts": "^8.0.0",
-        "commander": "^14.0.0"
+        "commander": "^15.0.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.1.2",
-        "@commander-js/extra-typings": "^14.0.0",
+        "@commander-js/extra-typings": "^15.0.0",
         "@types/node": "^26.0.0",
         "git-cliff": "^2.9.1",
         "lefthook": "^2.0.0",
