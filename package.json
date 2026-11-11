@@ -44,7 +44,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "2.6.6",
-        "@commander-js/extra-typings": "15.0.0",
+        "@commander-js/extra-typings": "15.1.0",
         "@types/node": "26.6.6",
         "git-cliff": "2.14.2",
         "lefthook": "2.2.2",
